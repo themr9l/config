@@ -43,6 +43,12 @@ Plugin 'tpope/vim-fugitive'
 "Buffer see
 Plugin 'kien/ctrlp.vim'
 
+"Status line
+Plugin 'bling/vim-airline'
+
+"xml support
+Plugin 'othree/xml.vim'
+
 "#######################################################################
 call vundle#end()
 filetype plugin indent on  
@@ -98,6 +104,9 @@ endif
 "xml format 
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
-"Find local .vimrc files
+"Find local .vimrc files TODO???
 set exrc
 set secure
+
+"NERD tree auto close after open file
+let NERDTreeQuitOnOpen=1
