@@ -110,3 +110,6 @@ set secure
 
 "NERD tree auto close after open file
 let NERDTreeQuitOnOpen=1
+
+"For airline symbols
+let g:airline_powerline_fonts = 1
