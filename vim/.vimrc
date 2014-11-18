@@ -103,6 +103,7 @@ endif
 
 "xml format 
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+au FileType json setlocal equalprg=python\ -m\ json.tool\ 2>/dev/null
 
 "Find local .vimrc files TODO???
 set exrc
@@ -113,3 +114,11 @@ let NERDTreeQuitOnOpen=1
 
 "For airline symbols
 let g:airline_powerline_fonts = 1
+
+"Airline tabs
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
