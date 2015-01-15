@@ -199,6 +199,6 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
-"test
+" test
 nnoremap <S-h> gT
 nnoremap <S-l> gt
