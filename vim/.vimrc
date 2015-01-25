@@ -10,8 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 "Snippets
 Plugin 'garbas/vim-snipmate'
 "Shippets dependies
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 "Snippets library
 Plugin 'honza/vim-snippets'
 "Add second symbol of (['" and other automatically
@@ -110,7 +110,7 @@ set smartcase
 colorscheme desert
 
 if has('gui_running')
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 11
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
     set guioptions-=T
     set guioptions-=m
     "set guioptions-=e
@@ -202,3 +202,5 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 " test
 nnoremap <S-h> gT
 nnoremap <S-l> gt
+
+set encoding=utf-8
