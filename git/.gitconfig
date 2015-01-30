@@ -1,9 +1,9 @@
 [user]
-	name = Victor Vance
+	name = Victor Anikeenko
 	email = viktor.anikeenko@progforce.com
 [core]
 	editor = vim
-	excludesfile = /home/themr9l/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = gvimdiff
 [alias]

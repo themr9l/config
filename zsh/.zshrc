@@ -9,6 +9,7 @@ git_prompt() {
   branch=`git symbolic-ref HEAD 2>/dev/null | cut -d / -f 3`
   if [ "$branch" != "" ]; then echo "[$branch]"; fi
 }
+
 setopt prompt_subst
 export PROMPT='%{$fg[cyan]%}%n@%m>%{$reset_color%} %{$fg[yellow]%}%~:%{$reset_color%} '
 export RPROMPT='$(git_prompt)'
@@ -45,4 +46,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# Aliases
 alias ls='ls -l -h --color=auto'
+
+# Environment variables
+export AUTOSSH_PORT=0
+export PSQL_EDITOR=vim
