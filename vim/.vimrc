@@ -35,7 +35,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
 "Auto complete
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 "Git integration
 Plugin 'tpope/vim-fugitive'
@@ -54,12 +54,6 @@ Plugin 'scrooloose/syntastic'
 
 "trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
-
-"python syntax
-Plugin 'python.vim'
-
-"scala
-Plugin 'derekwyatt/vim-scala'
 
 "#######################################################################
 call vundle#end()
@@ -192,15 +186,19 @@ vnoremap <silent> # :<C-U>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
 " tab navigation like firefox
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
+"nnoremap <C-S-tab> :tabprevious<CR>
+"nnoremap <C-tab>   :tabnext<CR>
+"nnoremap <C-t>     :tabnew<CR>
+"inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+"inoremap <C-tab>   <Esc>:tabnext<CR>i
+"inoremap <C-t>     <Esc>:tabnew<CR>
 
 " test
 nnoremap <S-h> gT
 nnoremap <S-l> gt
 
+" useful
 set encoding=utf-8
+
+" performance
+let g:loaded_youcompleteme = 1
